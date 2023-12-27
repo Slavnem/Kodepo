@@ -1,0 +1,432 @@
+/* root */
+:root {
+    /* main color */
+    --main_black: #111111;
+    --main_white: #dddddd;
+    --main_grey: #555555;
+    --main_red: #ff0000;
+    --main_navyblue: #0400ff;
+    --main_blue: #005fff;
+    --main_pink: #ff00ec;
+    --main_purple: #8800ff;
+    --main_green: #01ff00;
+    --main_orange: #ff8800;
+    --main_yellow: #ffde00;
+    --main_turquoise: #00ffff;
+    /* light color */
+    --dark_black: #000000;
+    --dark_white: #bebebe;
+    --dark_grey: #404040;
+    --dark_red: #ab0000;
+    --dark_navyblue: #03006b;
+    --dark_blue: #003c80;
+    --dark_pink: #a40088;
+    --dark_purple: #460074;
+    --dark_green: #007a14;
+    --dark_orange: #b66100;
+    --dark_yellow: #a9b000;
+    --dark_turquoise: #008a88;
+    /* dark color */
+    --light_black: #333333;
+    --light_white: #ffffff;
+    --light_grey: #868686;
+    --light_red: #fa4e4e;
+    --light_navyblue: #394eff;
+    --light_blue: #39b1ff;
+    --light_pink: #ff39fb;
+    --light_purple: #b739ff;
+    --light_green: #39ff49;
+    --light_orange: #ff8c39;
+    --light_yellow: #ffe639;
+    --light_turquoise: #3cfffa;
+    
+    /* color v2 */
+    /* light color */
+    --light_white_v2: #fffeff;
+
+    /* linear gradient */
+    --lineargradient-black-grey-v1: linear-gradient(135deg, rgba(0,0,0,1) 0%, rgba(93,93,93,1) 100%);
+    --lineargradient-blue-green-v1: linear-gradient(135deg, rgba(0,112,255,1) 0%, rgba(105,255,127,1) 100%);
+    --lineargradient-blue-orange-v1: linear-gradient(135deg, rgba(0,112,255,1) 0%, rgba(255,140,40,1) 100%);
+    --lineargradient-black-darkgrey-grey-v1: linear-gradient(135deg, rgba(0,0,0,1) 0%, rgba(74,69,60,1) 50%, rgba(217,217,217,1) 100%);
+
+    /* rgb dark */
+    --rgb-dark_black: 0, 0, 0;
+    /* rgba light */
+    --rgb-light_white: 255, 255, 255;
+    --rgb-light_red: 255, 71, 71;
+
+    /* rgba */
+    --rgb_alpha-01: 0.1;
+    --rgb_alpha-02: 0.2;
+    --rgb_alpha-03: 0.3;
+    --rgb_alpha-04: 0.4;
+    --rgb_alpha-05: 0.5;
+    --rgb_alpha-06: 0.6;
+    --rgb_alpha-07: 0.7;
+    --rgb_alpha-08: 0.8;
+    --rgb_alpha-09: 0.9;
+    --rgb_alpha-10: 010;
+
+    /* padding */
+    --em-xxs: 0.125em;
+    --em-xs: 0.25em;
+    --em-s: 0.5em;
+    --em-sm: 0.75em;
+    --em-m: 1em;
+    --em-ml: 1.25em;
+    --em-l: 1.5em;
+    --em-lxl: 1.75em;
+    --em-xl: 2em;
+    --em-2xl: 2.5em;
+    --em-3xl: 3em;
+    --em-4xl: 3.5em;
+    --em-5xl: 4em;
+    --em-6xl: 4.5em;
+    --em-7xl: 5em;
+
+    /* margin */
+    --rem-xxs: 0.125rem;
+    --rem-xs: 0.25rem;
+    --rem-s: 0.5rem;
+    --rem-sm: 0.75rem;
+    --rem-m: 1rem;
+    --rem-ml: 1.25rem;
+    --rem-l: 1.5rem;
+    --rem-lxl: 1.75rem;
+    --rem-xl: 2rem;
+    --rem-2xl: 2.5rem;
+    --rem-3xl: 3rem;
+    --rem-4xl: 3.5rem;
+    --rem-5xl: 4rem;
+    --rem-6xl: 4.5rem;
+    --rem-7xl: 5rem;
+
+    /* main */
+    --none: none;
+    --zero: 0;
+    --auto: auto;
+    --center: center;
+    --flex: flex;
+    --grid: grid;
+    --wrap: wrap;
+    --fullw: 100%;
+    --fullvh: 100vh;
+    --fullvw: 100vw;
+    --relative: relative;
+    --absolute: absolute;
+    --fixed: fixed;
+    --sticky: sticky;
+    --border-box: border-box;
+    --block: block;
+    --inline-block: inline-block;
+    --row: row;
+    --column: column;
+    --transparent: transparent;
+    --pointer: pointer;
+    --flex-start: flex-start;
+    --cover: cover;
+    --no-repeat: no-repeat;
+    --hidden: hidden;
+    --smooth: smooth;
+    --inherit: inherit;
+
+    /* font-family */
+    --fontf-sansserif: sans-serif;
+    --fontf-arial: Arial;
+    --fontf-helvetica: Helvetica;
+    --fontf-unknown: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    --fontf-segoe: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --fontf-times: 'Times New Roman', Times, serif;
+
+    /* font-size */
+    --fonts-xxs: 0.7rem;
+    --fonts-xs: 0.8rem;
+    --fonts-s: 0.9rem;
+    --fonts-sm: 1rem;
+    --fonts-m: 1.25rem;
+    --fonts-ml: 1.5rem;
+    --fonts-l: 1.75rem;
+    --fonts-lxl: 2rem;
+    --fonts-xl: 2.25rem;
+    --fonts-2xl: 2.5rem;
+    --fonts-3xl: 3rem;
+    --fonts-4xl: 3.5rem;
+    --fonts-5xl: 4rem;
+    --fonts-6xl: 4.5rem;
+    --fonts-7xl: 5rem;
+
+    --fonts-low: clamp(0.6em, 1vw, 0.7em);
+    --fonts-lowp: clamp(0.7em, 3vw, 0.8em);
+    --fonts-med: clamp(0.8em, 4vw, 0.9em);
+    --fonts-medp: clamp(0.9em, 5vw, 1em);
+    --fonts-medpp: clamp(0.95em, 8vw, 1em);
+    --fonts-high: clamp(1em, 10vw, 1.1em);
+    --fonts-highp: clamp(1.25em, 15vw, 1.5em);
+    --fonts-default: clamp(0.8em, 3vw, 0.9em);
+
+    /* font weight */
+    --fontw-800: 800;
+    --fontw-700: 700;
+    --fontw-600: 600;
+    --fontw-500: 500;
+    --fontw-400: 400;
+    --fontw-300: 300;
+
+    /* percent % */
+    --percent-5: 5%;
+    --percent-10: 10%;
+    --percent-25: 25%;
+    --percent-50: 50%;
+    --percent-75: 75%;
+    --percent-100: 100%;
+
+    /* transitiion */
+    --transition-xfast: 0.1s linear;
+    --transition-fast: 0.2s linear;
+    --transition-xnormal: 0.3s linear;
+    --transition-normal: 0.4s linear;
+    --transition-xslow: 0.5s linear;
+    --transition-slow: 0.6s linear;
+
+    /* transform - translate X-Y */
+    --screenx-p50: translateX(50%);
+    --screenx-n50: translateX(-50%);
+    --screeny-p50: translateY(50%);
+    --screeny-n50: translateY(-50%);
+    --screenxy-n50: translate(-50%, -50%);
+    --screenxy-p50: translate(50%, 50%);
+
+    /* transform - rotate deg */
+    --rotate-p15deg: rotate(15deg);
+    --rotate-p30deg: rotate(30deg);
+    --rotate-p45deg: rotate(45deg);
+    --rotate-p60deg: rotate(60deg);
+    --rotate-p75deg: rotate(75deg);
+    --rotate-p90deg: rotate(90deg);
+    --rotate-p135deg: rotate(135deg);
+    --rotate-p180deg: rotate(180deg);
+    --rotate-p225deg: rotate(225deg);
+    --rotate-p270deg: rotate(270deg);
+    --rotate-p315deg: rotate(315deg);
+    --rotate-p360deg: rotate(360deg);
+    --rotate-n15deg: rotate(-15deg);
+    --rotate-n30deg: rotate(-30deg);
+    --rotate-n45deg: rotate(-45deg);
+    --rotate-n60deg: rotate(-60deg);
+    --rotate-n75deg: rotate(-75deg);
+    --rotate-n90deg: rotate(-90deg);
+    --rotate-n135deg: rotate(-135deg);
+    --rotate-n180deg: rotate(-180deg);
+    --rotate-n225deg: rotate(-225deg);
+    --rotate-n270deg: rotate(-270deg);
+    --rotate-n315deg: rotate(-315deg);
+    --rotate-n360deg: rotate(-360deg);
+
+    /* /////////////////////////// */
+    /*       ELEMENT STYLE         */
+    /* /////////////////////////// */
+    /* static */
+    --static-bg-page-header-v1: rgba(var(--rgb-dark_black), 0.5);
+    --static-color-page-header-v1: var(--light_white);
+
+    --static-bg-page-header-searchbtn-v1: var(--light_white);
+    --static-color-page-header-searchbtn-v1: var(--light_black);
+
+    --static-bg-page-header-menu-btn-v1: "transparent";
+    --static-color-page-header-menu-btn-v1: "transparent";
+
+    --static-bg-page-header-menu-area-btn-v1: var(--light_black);
+    --static-color-page-header-menu-area-btn-v1: var(--light_white);
+
+    --static-bg-page-header-menu-area-v1: "transparent";
+    --static-color-page-header-menu-area-v1: var(--light_white);
+
+    --static-bg-page-header-menu-area-form-v1: var(--main_black);
+    --static-color-page-header-menu-area-form-v1: var(--light_white);
+
+    --static-bg-page-header-menu-user-area-v1: var(--light_white);
+    --static-color-page-header-menu-user-area-v1: var(--light_black);
+
+    --static-bg-page-header-menu-area-form-btn-v1: var(--light_black);
+    --static-color-page-header-menu-area-form-btn-v1: var(--light_white);
+
+    --static-bg-page-data-add-files-area-v1: var(--lineargradient-blue-orange-v1);
+    --static-color-page-data-add-files-area-v1: var(--light_white);
+
+    --static-bg-page-data-add-files-form-area-v1: rgba(0,0,0,0.6);
+    --static-color-page-data-add-files-form-area-v1: var(--light_blue);
+
+    --static-bg-page-data-add-files-form-area-input-v1: var(--light_white);
+    --static-color-page-data-add-files-form-area-input-v1: var(--main_grey);
+
+    --static-bg-page-data-add-files-form-area-submit-v1: var(--light_grey);
+    --static-color-page-data-add-files-form-area-submit-v1: var(--light_white);
+
+    --static-bg-page-data-add-files-form-area-import-area-v1: var(--lineargradient-blue-green-v1);
+    --static-color-page-data-add-files-form-area-import-area-v1: var(--light_white);
+
+    --static-bg-page-data-add-files-form-area-import-btn-v1: "transparent";
+    --static-color-page-data-add-files-form-area-import-btn-v1: var(--static-color-page-data-add-files-form-area-import-area-v1);
+
+    --static-bg-page-data-add-files-form-area-input-svg-v1: "transparent";
+    --static-color-page-data-add-files-form-area-input-svg-v1: var(--static-color-page-data-add-files-form-area-v1);
+
+    --static-bg-page-data-add-files-info-area-v1: rgba(var(--rgb-dark_black), 0.2);
+    --static-color-page-data-add-files-info-area-v1: var(--light_white);
+
+    --static-bg-page-data-add-files-fileresult-info-data: var(--lineargradient-blue-green-v1);
+    --static-color-page-data-add-files-fileresult-info-data: var(--light_white);
+
+    --static-bg-page-data-add-navigation-form-v1: var(--main_black);
+    --static-color-page-data-add-navigation-form-v1: var(--light_black);
+
+    --static-bg-page-data-add-navigation-form-btn-create-project-v1: var(--dark_grey);
+    --static-color-page-data-add-navigation-form-btn-create-project-v1: var(--light_white);
+
+    --static-bg-page-data-add-navigation-tool-create-project-form-title-area-v1: var(--lineargradient-blue-green-v1);
+    --static-color-page-data-add-navigation-tool-create-project-form-title-area-v1: var(--light_white);
+
+    --static-bg-page-data-add-navigation-tool-create-project-form-input-text-v1: rgba(255,255,255,1);
+    --static-color-page-data-add-navigation-tool-create-project-form-input-text-v1:var(--main_grey);
+
+    --static-bg-page-data-add-navigation-tool-create-project-form-submit-v1: var(--light_white);
+    --static-color-page-data-add-navigation-tool-create-project-form-submit-v1: var(--main_grey);
+
+    --static-bg-account-settings-user-info-area-v1: var(--light_white);
+    --static-color-account-settings-user-info-area-v1: var(--light_black);
+
+    --static-bg-account-settings-text-body-v1: "transparent";
+    --static-color-account-settings-text-body-v1: var(--light_grey);
+
+    --static-bg-account-settings-change-area-btn-v1: var(--main_black);
+    --static-color-account-settings-change-area-btn-v1: var(--light_white);
+
+    --static-bg-account-settings-text-body-language-v1: rgba(255,255,255,0.75);
+    --static-color-account-settings-text-body-language-v1: var(--light_grey);
+
+    --static-bg-account-settings-text-body-password-toggle-v1: var(--light_grey);
+    --static-color-account-settings-text-body-password-toggle-v1: var(--light_white);
+
+    --static-bg-users-search-v1: var(--main_black);
+    --static-color-users-search-v1: var(--light_white_v2);
+
+    --static-bg-users-search-form-v1: rgba(0,0,0,0,0.25);
+    --static-color-users-search-form-v1: var(--light_white_v2);
+
+    --static-bg-users-search-form-search-input-v1: "transparent";
+    --static-color-users-search-form-search-input-v1: var(--light_white_v2);
+
+    --static-bg-users-user-list-v1: var(--light_white);
+    --static-color-users-user-list-v1: var(--light_black);
+
+    --static-color-users-user-info-textarea-title-v1: var(--light_black);
+    --static-color-users-user-info-textarea-names-v1: var(--light_white);
+
+    --static-bg-users-user-details-v1: var(--light_blue);
+    --static-color-users-user-details-v1: var(--light_white_v2);
+
+    --static-bg-users-user-project-area-v1: var(--light_blue);
+    --static-color-users-user-project-area-v1: var(--light_white);
+
+    --static-bg-users-user-svg-v1: var(--light_white_v2);
+    --static-color-users-user-svg-v1: var(--light_blue);
+
+    --static-bg-users-user-project-page-list-btn-v1: var(--light_white_v2);
+    --static-color-users-user-project-page-list-btn-v1: var(--light_black);
+
+    --static-bg-users-user-project-status-backup-v1: var(--light_red);
+    --static-color-users-user-project-status-backup-v1: var(--light_white_v2);
+
+    --static-bg-users-user-project-status-active-v1: var(--light_blue);
+    --static-color-users-user-project-status-active-v1: var(--light_white_v2);
+
+    /* hover */
+    --hover-bg-page-header-searchbtn-v1: var(--main_blue);
+    --hover-color-page-header-searchbtn-v1: var(--light_white);
+
+    --hover-bg-page-header-menu-area-btn-v1: var(--main_blue);
+    --hover-color-page-header-menu-area-btn-v1: var(--light_white);
+
+    --hover-bg-page-header-menu-area-form-btn-v1: var(--main_blue);
+    --hover-color-page-header-menu-area-form-btn-v1: var(--light_white);
+
+    --hover-bg-page-data-add-files-form-area-import-area-v1: var(--light_navyblue);
+    --hover-color-page-data-add-files-form-area-import-area-v1: var(--light_white);
+
+    --hover-bg-page-data-add-files-form-area-import-btn-v1: "transparent";
+    --hover-color-page-data-add-files-form-area-import-btn-v1: var(--light_white);
+
+    --hover-bg-page-data-add-files-form-area-submit-v1: var(--light_navyblue);
+    --hover-color-page-data-add-files-form-area-submit-v1: var(--light_white);
+
+    --hover-bg-page-data-add-navigation-form-btn-create-project-v1: var(--main_blue);
+    --hover-color-page-data-add-navigation-form-btn-create-project-v1: var(--light_white);
+
+    --hover-bg-page-data-add-navigation-form-btn-delete-v1: var(--main_red);
+    --hover-color-page-data-add-navigation-form-btn-delete-v1: var(--light_white);
+
+    --hover-bg-page-data-add-navigation-form-btn-recover-backup-v1: var(--dark_purple);
+    --hover-color-page-data-add-navigation-form-btn-recover-backup-v1: var(--light_white);
+
+    --hover-bg-page-data-add-navigation-tool-create-project-form-submit-v1: var(--main_blue);
+    --hover-color-page-data-add-navigation-tool-create-project-form-submit-v1: var(--light_white);
+
+    --hover-bg-page-data-add-navigation-tool-create-project-form-reset-v1: var(--main_purple);
+    --hover-color-page-data-add-navigation-tool-create-project-form-reset-v1: var(--light_white);
+
+    --hover-bg-account-settings-change-area-btn-v1: var(--main_blue);
+    --hover-color-account-settings-change-area-btn-v1: var(--light_white);
+
+    --hover-bg-account-settings-change-area-btn-reset-v1: var(--main_purple);
+    --hover-color-account-settings-change-area-btn-reset-v1: var(--light_white);
+
+    --hover-bg-account-settings-text-body-password-toggle-show-v1: var(--main_blue);
+    --hover-color-account-settings-text-body-password-toggle-show-v1: var(--light_white);
+
+    --hover-bg-account-settings-text-body-password-toggle-write-v1: var(--main_red);
+    --hover-color-account-settings-text-body-password-toggle-write-v1: var(--light_white);
+
+    --hover-bg-users-search-form-search-input-v1: var(--light_blue);
+    --hover-color-users-search-form-search-input-v1: var(--light_white);
+
+    --hover-bg-users-user-list-v1: var(--light_blue);
+    --hover-color-users-user-list-v1: var(--light_white);
+
+    --hover-bg-users-user-project-page-list-btn-v1: var(--light_blue);
+    --hover-color-users-user-project-page-list-btn-v1: var(--light_white_v2);
+}
+
+html {
+  background-color: var(--main_black);
+  color: var(--main_white);
+  font-family: var(--fontf-sanserif);
+  scroll-behavior: var(--smooth);
+  font-size: 16px;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  line-height: 1.5;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+a, button, input[type="submit"] {
+  text-decoration: none;
+  list-style-type: none;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+ul, li, input {
+  text-decoration: none;
+  list-style-type: none;
+  outline: none;
+  border: none;
+}

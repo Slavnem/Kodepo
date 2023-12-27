@@ -1,0 +1,193 @@
+header {
+  width: 100%;
+  height: auto;
+  position: relative;
+  background: var(--static-bg-page-header-v1);
+  color: var(--static-color-page-header-v1);
+  backdrop-filter: blur(1rem);
+  z-index: 99;
+}
+
+header nav {
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+  padding: clamp(0.75rem, 5vw, 1rem) clamp(1rem, 5vw, 1.25rem);
+}
+
+nav .logo-area {
+  max-width: 24px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+nav .logo-area img {
+  min-width: 24px;
+  width: auto;
+  max-width: 25%;
+  height: auto;
+}
+
+nav .header-menu-btn-area {
+  position: relative;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.header-menu-btn-area .header-menu-btn {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: none;
+  border-radius: 0.5rem;
+  background: var(--static-bg-page-header-menu-btn-v1);
+  color: var(--static-bg-page-header-menu-btn-v1);
+  padding: clamp(0.25rem, 5%, 0.5rem);
+  transition: 0.15s linear;
+}
+
+.header-menu-btn-area .header-menu-btn:hover {
+  background: var(--hover-bg-page-header-menu-area-btn-v1);
+  color: var(--hover-color-page-header-menu-area-btn-v1);
+}
+
+nav .menu-area {
+  width: auto;
+  max-width: 250px;
+  height: auto;
+  display: grid;
+  position: absolute;
+  top: 100%;
+  right: 0%;
+  align-items: stretch;
+  justify-content: center;
+  text-align: center;
+  border-radius: 1rem;
+  background: var(--static-bg-page-header-menu-area-form-v1);
+  color: var(--static-color-page-header-menu-area-form-v1);
+  transform: translateX(0%);
+  padding: clamp(0.5rem, 5%, 0.75rem);
+  margin: clamp(0.25rem, 5%, 0.5rem);
+}
+
+.menu-area .menu-user-area {
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: var(--static-bg-page-header-menu-user-area-v1);
+  color: var(--static-color-page-header-menu-user-area-v1);
+  border: none;
+  border-radius: 0.5rem;
+  padding: clamp(0.5rem, 5%, 1rem);
+  margin: 0 auto clamp(0.125rem, 2vh, 0.25rem) auto;
+  overflow: hidden;
+}
+
+.menu-user-area :is(.menu-user-area-text, .menu-user-area-icon) {
+  min-width: 25%;
+  width: auto;
+  max-width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0.125rem;
+  overflow: hidden;
+}
+
+.menu-user-area-text p {
+  font-family: sans-serif;
+  font-weight: 800;
+  font-size: clamp(0.7rem, 2vw, 0.8rem);
+  margin: auto 0.125rem;
+}
+
+.menu-user-area-icon span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.menu-user-area-icon span svg {
+  min-width: 1.25rem;
+  width: 5vw;
+  max-width: 2rem;
+  height: auto;
+  padding: 0.125rem;
+  margin: auto;
+}
+
+.menu-area .menu-redirect-btn {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: var(--static-bg-page-header-menu-area-btn-v1);
+  color: var(--static-color-page-header-menu-area-btn-v1);
+  font-family: monospace;
+  font-weight: 600;
+  font-size: clamp(0.6rem, 2vw, 0.8rem);
+  border: none;
+  border-radius: 0.5rem;
+  padding: clamp(0.25rem, 5%, 0.5rem) clamp(0.5rem, 10%, 1rem);
+  margin: 0.125rem;
+  transition: 0.15s linear;
+}
+
+.menu-area .menu-redirect-btn:hover {
+  background: var(--hover-bg-page-header-menu-area-btn-v1);
+  color: var(--hover-color-page-header-menu-area-btn-v1);
+}
+
+.menu-area .menu-redirect-btn svg {
+  min-width: 1.25rem;
+  width: 5%;
+  max-width: 2rem;
+  height: auto;
+  padding: 0.125rem;
+  margin: 0 0.25rem 0 0;
+}
+
+.menu-redirect-area .menu-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: sans-serif;
+  font-weight: 600;
+  font-size: clamp(0.6rem, 3vw, 0.8rem);
+  border: none;
+  border-radius: 0.5rem;
+  background: var(--static-bg-page-header-menu-area-form-btn-v1);
+  color: var(--static-color-page-header-menu-area-form-btn-v1);
+  overflow: hidden;
+  padding: clamp(0.2rem, 2vh, 0.4rem) clamp(0.3rem, 5%, 0.6rem);
+  margin: clamp(0.125rem, 2vh, 0.2rem) 0;
+  transition: 0.15s linear;
+}
+
+.menu-redirect-area svg {
+  margin: auto 0.5rem auto 0.25rem;
+}
+
+.menu-redirect-area .menu-btn:hover {
+  background: var(--hover-bg-page-header-menu-area-form-btn-v1);
+  color: var(--hover-color-page-header-menu-area-form-btn-v1);
+}

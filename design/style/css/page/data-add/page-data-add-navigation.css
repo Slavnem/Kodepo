@@ -1,0 +1,72 @@
+form:is(#menu-data-add-form, .menu-data-add-form, [name="menu-data-add-go"]) {
+    width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: var(--static-bg-page-data-add-navigation-form-v1);
+    color: var(--static-color-page-data-add-navigation-form-v1);
+}
+
+form :is(#form-data-add-button-area, .form-data-add-button-area) {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    padding: clamp(0.25rem, 5vh, 0.5rem) clamp(0.25rem, 5%, 5%);
+}
+
+.form-data-add-button-area :is(button[name="menu-data-add-go"]) {
+    width: auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: none;
+    border-radius: 0.5rem;
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: clamp(0.7rem, 5%, 0.8rem);
+    background: var(--static-bg-page-data-add-navigation-form-btn-create-project-v1);
+    color: var(--static-color-page-data-add-navigation-form-btn-create-project-v1);
+    padding: clamp(0.25rem, 2vh, 0.5rem) clamp(0.5rem, 5%, 0.75rem);
+    margin: clamp(0.125rem, 2vh, 0.25rem) clamp(0.25rem, 5%, 0.5rem);
+    transition: 0.15s linear;
+}
+
+.form-data-add-button-area :is(button[name="menu-data-add-go"]:is(
+    [value="menu-data-add-create-new-project"],
+    [value="menu-data-add-create-folder"],
+    [value="menu-data-add-add-file"]
+    )
+):hover {
+    background: var(--hover-bg-page-data-add-navigation-form-btn-create-project-v1);
+    color: var(--hover-color-page-data-add-navigation-form-btn-create-project-v1);
+    box-shadow: 0 0 30px 0 var(--hover-bg-page-data-add-navigation-form-btn-create-project-v1);
+}
+
+.form-data-add-button-area :is(button[name="menu-data-add-go"][value="menu-data-add-delete"]):hover {
+    background: var(--hover-bg-page-data-add-navigation-form-btn-delete-v1);
+    color: var(--hover-color-page-data-add-navigation-form-btn-delete-v1);
+    box-shadow: 0 0 30px 0 var(--hover-bg-page-data-add-navigation-form-btn-delete-v1);
+}
+
+.form-data-add-button-area :is(button[name="menu-data-add-go"]:is(
+    [value="menu-data-add-recover-backup"],
+    [value="menu-data-add-new-backup"]
+    )
+):hover {
+    background: var(--hover-bg-page-data-add-navigation-form-btn-recover-backup-v1);
+    color: var(--hover-color-page-data-add-navigation-form-btn-recover-backup-v1);
+    box-shadow: 0 0 30px 0 var(--hover-bg-page-data-add-navigation-form-btn-recover-backup-v1);
+}
+
+.form-data-add-button-area :is(button[name="menu-data-add-go"] svg) {
+    width: clamp(0.5rem, 50vw, 1.25rem);
+    height: clamp(0.5rem, 50vw, 1.25rem);
+    margin: auto clamp(0.125rem, 5%, 0.25rem);
+}

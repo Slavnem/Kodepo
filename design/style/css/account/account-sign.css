@@ -1,0 +1,219 @@
+.sign {
+  width: 100%;
+  min-height: 100vh;
+  height: auto;
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.sign-container {
+  width: 100%;
+  min-height: 100vh;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 5%;
+}
+
+.sign-center {
+  min-width: auto;
+  width: auto;
+  max-width: 600px;
+  height: auto;
+  position: relative;
+  background: rgba(62,59,59,0.1);
+  color: #ffffff;
+  border: none;
+  border-radius: 1.5rem;
+  backdrop-filter: blur(1rem);
+  padding: clamp(1rem, 10%, 3rem) clamp(0.25rem, 5%, 2rem);
+}
+
+.sign-column {
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.sign-column .sign-header {
+  margin: 0.5rem 0;
+}
+
+.sign-header h3.sign-header-title {
+  font-family: sans-serif;
+  font-weight: 700;
+  font-size: clamp(1.5rem, 5vw, 2rem);
+}
+
+.sign-header span.sign-header-comment {
+  font-family: sans-serif;
+  font-weight: 500;
+  font-size: clamp(0.8rem, 3vw, 1rem);
+  margin: clamp(0.125rem, 2vh, 0.25rem) auto;
+}
+
+.sign-column form.sign-form {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  padding: clamp(0.5rem, 3vh, 1rem) clamp(0rem, 5%, 0.5rem);
+}
+
+form.sign-form .error-area {
+  width: 100%;
+  height: auto;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.error-area .error-msg {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: 300;
+  font-size: clamp(0.8rem, 2vw, 0.85rem);
+  background: var(--main_red);
+  color: var(--light_white);
+  padding: clamp(0.25rem, 2vh, 0.5rem) 10%;
+  margin: clamp(0.125rem, 2vh, 0.25rem) auto;
+}
+
+form.sign-form .error-area,
+.error-area .error-msg,
+form.sign-form .input-username-area,
+form.sign-form .input-password-area,
+form.sign-form .input-email-area,
+form.sign-form .input-name-area,
+form.sign-form .input-surname-area,
+form.sign-form input,
+.sign-now-area button,
+form.sign-form button[type="button"]  {
+  border: none;
+  border-radius: 0.5rem;
+}
+
+form.sign-form input {
+  font-family:monospace;
+  font-weight: 500;
+  font-size: clamp(0.9rem, 2%, 0.9rem);
+}
+
+form.sign-form .sign-form-input-area {
+  width: 100%;
+}
+
+form.sign-form .input-username-area,
+form.sign-form .input-password-area,
+form.sign-form .input-email-area,
+form.sign-form .input-name-area,
+form.sign-form .input-surname-area {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  color: var(--light_black);
+  background: var(--light_white);
+  margin: clamp(0.25rem, 3vh, 0.5rem) 0;
+}
+
+form.sign-form .input-submit-area {
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: clamp(0.5rem, 7vh, 0.75rem) auto clamp(0.25rem, 5vh, 0.5rem) auto;
+}
+
+form.sign-form input[type="text"],
+form.sign-form input[type="password"] {
+  background: transparent;
+  color: var(--light_black);
+  padding: clamp(0.125rem, 2vh, 0.25rem) clamp(0.5rem, 5vw, 1rem);
+  margin: clamp(0.125rem, 2vh, 0.25rem);
+}
+
+form.sign-form input[type="submit"] {
+  background: var(--light_white);
+  color: var(--light_black);
+  padding: clamp(0.25rem, 2vh, 0.75rem) clamp(1.75rem, 10%, 2.5rem);
+  margin: clamp(0.125rem, 2vh, 0.25rem) 0;
+  transition: 0.15s linear;
+}
+
+form.sign-form input[type="submit"]:hover {
+  color: var(--light_white);
+  background: var(--main_blue);
+}
+
+form.sign-form button[type="button"] {
+  display: flex;
+  position: absolute;
+  right: clamp(0.25rem, 5%, 0.5rem);
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  transition: 0.15s linear;
+}
+
+.sign-form .btn-password-toggle {
+  min-width: 1.25rem;
+  width: 10%;
+  max-width: 2rem;
+  height: auto;
+  padding: 0.125rem;
+  margin: 0 0.25rem 0 0;
+}
+
+.sign-form .btn-password-toggle:hover {
+  color: var(--light_white);
+  background: var(--main_blue);
+}
+
+form.sign-form span {
+  display: flex;
+}
+
+form.sign-form svg {
+  width: auto;
+  height: clamp(1rem, 10%, 2rem);
+  padding: 0.125rem;
+  margin: auto;
+}
+
+.sign-column .sign-now-area {
+  margin: clamp(0.125rem, 5vh, 0.25rem) auto;
+}
+
+.sign-now-area {
+  width: auto;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: clamp(0.25rem, 5%, 0.5rem) 10%;
+}
+
+.sign-now-area .btn-sign-now {
+  background: transparent;
+  color: var(--light_grey);
+  cursor: pointer;
+  font-family: monospace;
+  font-weight: 500;
+  font-size: clamp(0.7rem, 2vw, 0.8rem);
+  transition: 0.15s linear;
+}
+
+.sign-now-area .btn-sign-now:hover {
+  color: var(--light_white);
+}
